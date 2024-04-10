@@ -20,7 +20,7 @@ public class GrabbableObject : MonoBehaviour
 
     public void Drop()
     {
-        Debug.Log("Hjälp");
+        
         this.GrabPointTransform = null;
         rb.isKinematic = false;
     }
