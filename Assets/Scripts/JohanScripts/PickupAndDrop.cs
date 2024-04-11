@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventorySystem : MonoBehaviour
+public class PickupAndDrop: MonoBehaviour
 {
     Ray ray;
     [SerializeField] private Transform PlayerCameraTransform;
