@@ -18,13 +18,13 @@ public class PickupAndDrop: MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            ShootRay();
-           
+            ShootRay();          
         }
-
+        //Behöver göra så att vid två olika knapp tryck sp roterar objectet vänster eller höger
     }
     void ShootRay()
     {
+        //Behöver göra en sant eller falskt funktion för att kolla om objectet är upplockat eller inte
         if (grabbableObject == null)
         {
             float PickupDistance = 2f;
@@ -42,9 +42,7 @@ public class PickupAndDrop: MonoBehaviour
             grabbableObject.Drop();
             grabbableObject = null;
         }
-        // Gör så att object som har plockats upp sparas i en lista som spelaren kan gå igenom
 
-        //skapa et UI som vissar en bild av objectet på skärmen
 
     }
 }
