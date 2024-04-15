@@ -20,11 +20,19 @@ public class PickupAndDrop: MonoBehaviour
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             ShootRay();          
         }
+        if (Input.GetKey(KeyCode.O))
+        {
+            grabbableObject.Rotate(0.3f);
+        }
+        if (Input.GetKey(KeyCode.P))
+        {
+            grabbableObject.Rotate(-0.3f);
+        }
         //Behöver göra så att vid två olika knapp tryck sp roterar objectet vänster eller höger
     }
     void ShootRay()
     {
-        //Behöver göra en sant eller falskt funktion för att kolla om objectet är upplockat eller inte
+        
         if (grabbableObject == null)
         {
             float PickupDistance = 2f;
