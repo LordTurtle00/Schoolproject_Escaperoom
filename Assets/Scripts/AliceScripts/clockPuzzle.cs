@@ -2,69 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class clockPuzzle : MonoBehaviour
 {
-    //the buttons are gonna have the tag 1, 2, 3, 4
+    // use counter in combination with tags to check right button
+    // button tags:
+    // button1
+    // button2 ... button4
 
-    int counter = 0;
-    bool buttonPushed = false;
-    bool correctButton = false;
-    GameObject button;
-    int button2 = 0;
-    List<int> buttons = new List<int>();
+    int counter = 1;
+    Ray ray;
+    float maxDistance = 10f;
+    bool puzzleCompleted = false;
 
 
-    //button.tag == counter
-    public class buttons
+    void shootRay()
     {
-        public int id
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance))
         {
-            get; set;
-        }
-
-        public bool buttonPressed()
-        {
-            button = GameObject.FindWithTag("button");
-            return button != null;
-
-        }
-
-        void buttonOrderCheck()
-        {
-            if (buttonPressed()) //when button is integrated
+            string _tag;
+            _tag = "button" + counter.ToString();
+            if (hitInfo.collider.gameObject.CompareTag(_tag))
             {
-                if (button == counter)
+                //right sequence
+                counter++;
+                Debug.Log("Yippie");
+
+                if(counter == 5)
                 {
-                    correctButton = true;
-                    playHappySound();
-                    counter++;
-                }
-                else
-                {
-                    correctButton = false;
-                    playSadSound();
-                    counter = 0;
+                    puzzleCompleted = true;
+                    Debug.Log("Puzzle completed");
                 }
             }
+            else
+            {
+                // wrong sequence
+                counter = 1;
+                Debug.Log("failure");
+            }
         }
+    }
 
-        void Update()
+    private void Update()
+    {
+        if (!puzzleCompleted)
         {
-            buttonOrderCheck(); //ändra funktionsnamn
-
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+                shootRay();
+            }
         }
-
-        void playHappySound()
-        {
-
-        }
-        void playSadSound()
-        {
-
-        }
-
-
     }
 }
