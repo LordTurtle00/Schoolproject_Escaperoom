@@ -395,7 +395,7 @@ PrefabInstance:
     - target: {fileID: 750834468604480586, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0ac5fcaefed31dd40879cf731ac5041b, type: 2}
+      objectReference: {fileID: 2100000, guid: ac299c8ef2da6b84e9f2c8708d2d6980, type: 2}
     - target: {fileID: 919132149155446097, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Name
       value: PotionDispenserV2 (1)
@@ -479,7 +479,7 @@ PrefabInstance:
     - target: {fileID: 750834468604480586, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0ac5fcaefed31dd40879cf731ac5041b, type: 2}
+      objectReference: {fileID: 2100000, guid: ac299c8ef2da6b84e9f2c8708d2d6980, type: 2}
     - target: {fileID: 919132149155446097, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Name
       value: PotionDispenserV2 (4)
@@ -945,7 +945,7 @@ PrefabInstance:
     - target: {fileID: 750834468604480586, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0ac5fcaefed31dd40879cf731ac5041b, type: 2}
+      objectReference: {fileID: 2100000, guid: ac299c8ef2da6b84e9f2c8708d2d6980, type: 2}
     - target: {fileID: 919132149155446097, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Name
       value: PotionDispenserV2 (3)
@@ -1212,7 +1212,7 @@ PrefabInstance:
     - target: {fileID: 750834468604480586, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0ac5fcaefed31dd40879cf731ac5041b, type: 2}
+      objectReference: {fileID: 2100000, guid: ac299c8ef2da6b84e9f2c8708d2d6980, type: 2}
     - target: {fileID: 919132149155446097, guid: f512f83be63f8ed40a2b791386fedc9a, type: 3}
       propertyPath: m_Name
       value: PotionDispenserV2 (2)
