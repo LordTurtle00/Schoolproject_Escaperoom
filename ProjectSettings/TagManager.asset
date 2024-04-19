@@ -9,6 +9,8 @@ TagManager:
   - button2
   - button3
   - button4
+  - CouldronLiquid
+  - wand
   layers:
   - Default
   - TransparentFX

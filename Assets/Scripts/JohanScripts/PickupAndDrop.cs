@@ -14,7 +14,7 @@ public class PickupAndDrop: MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        // gör så att object kan plockas upp av spelaren
+        // gï¿½r sï¿½ att object kan plockas upp av spelaren
         if (Input.GetKeyDown(KeyCode.E))
         {
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
@@ -28,11 +28,11 @@ public class PickupAndDrop: MonoBehaviour
         {
             grabbableObject.Rotate(-0.3f);
         }
-        //Behöver göra så att vid två olika knapp tryck sp roterar objectet vänster eller höger
+        //Behï¿½ver gï¿½ra sï¿½ att vid tvï¿½ olika knapp tryck sp roterar objectet vï¿½nster eller hï¿½ger
     }
+
     void ShootRay()
     {
-        
         if (grabbableObject == null)
         {
             float PickupDistance = 2f;
@@ -51,6 +51,9 @@ public class PickupAndDrop: MonoBehaviour
             grabbableObject = null;
         }
 
+        // Gï¿½r sï¿½ att object som har plockats upp sparas i en lista som spelaren kan gï¿½ igenom
+
+        //skapa et UI som vissar en bild av objectet pï¿½ skï¿½rmen
 
     }
 }
