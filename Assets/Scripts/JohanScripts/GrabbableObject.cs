@@ -25,6 +25,11 @@ public class GrabbableObject : MonoBehaviour
         rb.isKinematic = false;
     }
 
+    public void Rotate(float dir)
+    {
+        transform.Rotate(new Vector3(0, dir, 0));
+    }
+
     private void FixedUpdate() { 
      
        if (GrabPointTransform != null) { 
