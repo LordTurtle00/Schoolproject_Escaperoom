@@ -6,11 +6,14 @@ using UnityEngine;
 public class CandleActivation : MonoBehaviour
 {
     public bool isLit = false;
-    //ParticleSystem particles = GetComponentInChildren<ParticleSystem>();
+    public ParticleSystem Cfire;
+    public Light Clight;
 
     private void Start()
     {
-        //GameObject candleFire = GetComponentInChildren<BasicFire>();
+        Cfire = GetComponentInChildren<ParticleSystem>();
+        Clight = GetComponentInChildren<Light>();
+        Clight.enabled = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -19,11 +22,14 @@ public class CandleActivation : MonoBehaviour
         if (collision.gameObject.tag == "wand" && isLit == false)
         {
             isLit = true;
-            //ParticleSystem.enableEmission = true;
+            Cfire.Play();
+            Clight.enabled = true;
         }
         else
         {
             isLit = false;
+            Cfire.Stop();
+            Clight.enabled = false;
         }
     }
 }
