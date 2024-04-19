@@ -7,16 +7,21 @@ using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCou
 
 public class clockPuzzle : MonoBehaviour
 {
+    // Description of script:
     // use counter in combination with tags to check right button
-    // button tags:
-    // button1
-    // button2 ... button4
+    // button tags: button1, button2 ... button4
 
     int counter = 1;
     Ray ray;
     float maxDistance = 10f;
     bool puzzleCompleted = false;
+    [SerializeField] GameObject wand;
 
+    private void Start()
+    {
+        wand = GameObject.FindGameObjectWithTag("wand");
+        wand.SetActive(false);
+    }
 
     void buttonRay()
     {
@@ -33,14 +38,14 @@ public class clockPuzzle : MonoBehaviour
                 if(counter == 5)
                 {
                     puzzleCompleted = true;
-                    Debug.Log("Puzzle completed");
+                    //Debug.Log("Puzzle completed");
                 }
             }
             else
             {
                 // wrong sequence
                 counter = 1;
-                Debug.Log("failure");
+                //Debug.Log("failure");
             }
         }
     }
@@ -54,6 +59,11 @@ public class clockPuzzle : MonoBehaviour
                 ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
                 buttonRay();
             }
+        }
+
+        if(puzzleCompleted)
+        {
+            wand.SetActive(true);
         }
     }
 }
