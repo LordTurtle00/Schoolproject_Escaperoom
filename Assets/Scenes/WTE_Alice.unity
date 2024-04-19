@@ -426,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2823468300585586789, guid: e17c8de937a007c46affcddbd15c3043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.235
+      value: 0.973
       objectReference: {fileID: 0}
     - target: {fileID: 2823468300585586789, guid: e17c8de937a007c46affcddbd15c3043, type: 3}
       propertyPath: m_LocalPosition.z
@@ -930,6 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wand: {fileID: 1303094500818789450, guid: e09257a2e01727b48ab20e4175191478, type: 3}
+  liquid: {fileID: 0}
 --- !u!1001 &2083667270
 PrefabInstance:
   m_ObjectHideFlags: 0
