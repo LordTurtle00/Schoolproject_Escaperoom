@@ -18,7 +18,7 @@ public class clockPuzzle : MonoBehaviour
     bool puzzleCompleted = false;
 
 
-    void shootRay()
+    void buttonRay()
     {
         if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance))
         {
@@ -52,7 +52,7 @@ public class clockPuzzle : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-                shootRay();
+                buttonRay();
             }
         }
     }
