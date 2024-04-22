@@ -62,7 +62,7 @@ public class PickupAndDrop: MonoBehaviour
         {
             if (raycastHit.transform.TryGetComponent(out combinationLock))
             {
-                combinationLock.LockRotate(2f);
+                combinationLock.LockRotate(58f);
             }
         }
     }
