@@ -10,15 +10,17 @@ public class PickupAndDrop: MonoBehaviour
     [SerializeField] private LayerMask PickUpLayerMask;
 
     private GrabbableObject grabbableObject;
+    private CobinationLock combinationLock;
 
     // Update is called once per frame
     private void Update()
     {
-        // g�r s� att object kan plockas upp av spelaren
+        
         if (Input.GetKeyDown(KeyCode.E))
         {
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-            ShootRay();          
+            ShootRay();
+            LockRay();
         }
         if (Input.GetKey(KeyCode.O))
         {
@@ -28,9 +30,10 @@ public class PickupAndDrop: MonoBehaviour
         {
             grabbableObject.Rotate(-0.3f);
         }
-        //Beh�ver g�ra s� att vid tv� olika knapp tryck sp roterar objectet v�nster eller h�ger
+  
     }
-
+   
+    // g�r s� att object kan plockas upp av spelaren
     void ShootRay()
     {
         if (grabbableObject == null)
@@ -51,9 +54,16 @@ public class PickupAndDrop: MonoBehaviour
             grabbableObject = null;
         }
 
-        // G�r s� att object som har plockats upp sparas i en lista som spelaren kan g� igenom
-
-        //skapa et UI som vissar en bild av objectet p� sk�rmen
-
+    }
+    void LockRay()
+    {
+        float interact = 2f;
+        if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, interact, PickUpLayerMask))
+        {
+            if (raycastHit.transform.TryGetComponent(out combinationLock))
+            {
+                combinationLock.LockRotate(2f);
+            }
+        }
     }
 }
