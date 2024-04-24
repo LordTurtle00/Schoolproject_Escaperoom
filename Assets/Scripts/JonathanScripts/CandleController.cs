@@ -7,6 +7,7 @@ public class CandleController : MonoBehaviour
     [SerializeField] GameObject candle1, candle2, candle3, candle4, candle5;
     public CandleActivation CA;
     [SerializeField] GameObject DoorKey1;
+    public bool isComplete = false;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class CandleController : MonoBehaviour
             candle5.GetComponent<CandleActivation>().isLit == true)
         {
             DoorKey1.SetActive(true);
+            isComplete = true;
         }
     }
 }
