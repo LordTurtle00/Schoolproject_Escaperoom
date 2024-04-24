@@ -6,14 +6,17 @@ public class CandleController : MonoBehaviour
 {
     [SerializeField] GameObject candle1, candle2, candle3, candle4, candle5;
     public CandleActivation CA;
+    [SerializeField] GameObject DoorKey1;
+    public bool isComplete = false;
 
     void Start()
     {
-        candle1 = gameObject.transform.GetChild(1).gameObject;
-        candle2 = gameObject.transform.GetChild(2).gameObject;
-        candle3 = gameObject.transform.GetChild(3).gameObject;
-        candle4 = gameObject.transform.GetChild(4).gameObject;
-        candle5 = gameObject.transform.GetChild(5).gameObject;
+        DoorKey1.SetActive(false);
+        candle1 = gameObject.transform.GetChild(4).gameObject;
+        candle2 = gameObject.transform.GetChild(3).gameObject;
+        candle3 = gameObject.transform.GetChild(2).gameObject;
+        candle4 = gameObject.transform.GetChild(1).gameObject;
+        candle5 = gameObject.transform.GetChild(0).gameObject;
 
         Debug.Log(candle1);
     }
@@ -27,7 +30,8 @@ public class CandleController : MonoBehaviour
             candle4.GetComponent<CandleActivation>().isLit == false &&
             candle5.GetComponent<CandleActivation>().isLit == true)
         {
-            Debug.Log("Nice Job!");
+            DoorKey1.SetActive(true);
+            isComplete = true;
         }
     }
 }
