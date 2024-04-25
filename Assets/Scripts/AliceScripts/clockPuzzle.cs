@@ -14,7 +14,7 @@ public class clockPuzzle : MonoBehaviour
     int counter = 1;
     Ray ray;
     float maxDistance = 10f;
-    bool puzzleCompleted = false;
+    public bool puzzleCompleted = false;
     [SerializeField] GameObject wand;
     public GameObject liquid;
 

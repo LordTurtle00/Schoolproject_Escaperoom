@@ -18,7 +18,6 @@ public class CandleController : MonoBehaviour
         candle4 = gameObject.transform.GetChild(1).gameObject;
         candle5 = gameObject.transform.GetChild(0).gameObject;
 
-        Debug.Log(candle1);
     }
 
     // Update is called once per frame

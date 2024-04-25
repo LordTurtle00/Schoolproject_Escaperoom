@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/WTE_Dev.unity
+    path: Assets/Scenes/WTE_Dev 2.unity
     guid: 5f26bb1c8ded0024bbdfa2fbff24e12f
   m_configObjects: {}

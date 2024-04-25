@@ -13,6 +13,7 @@ TagManager:
   - wand
   - crown
   - key
+  - testTag
   layers:
   - Default
   - TransparentFX
