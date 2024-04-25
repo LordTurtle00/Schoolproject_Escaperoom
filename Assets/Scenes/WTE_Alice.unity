@@ -407,12 +407,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408761937}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.887, z: 4.593}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -0.27299994, z: -0.28700018}
   m_LocalScale: {x: 0.4119559, y: 0.1409895, z: 0.20112512}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1865836980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &408761942
 Rigidbody:
@@ -1171,12 +1171,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244971996}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.254, y: 0.909, z: 3.746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.254, y: -0.251, z: -1.1340001}
   m_LocalScale: {x: 0.09432077, y: 0.09432077, z: 0.09432077}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1865836980}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1244972001
 MonoBehaviour:
@@ -1384,7 +1384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1865836980}
   m_Layer: 0
-  m_Name: painting
+  m_Name: paintingPuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1406,6 +1406,8 @@ Transform:
   - {fileID: 423001595}
   - {fileID: 183707199}
   - {fileID: 658112164}
+  - {fileID: 1244972000}
+  - {fileID: 408761941}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000828597
@@ -1510,6 +1512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15e0156ac61a6f48b46318fa378c20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puzzleCompleted: 0
   wand: {fileID: 1303094500818789450, guid: e09257a2e01727b48ab20e4175191478, type: 3}
   liquid: {fileID: 0}
 --- !u!1001 &2083667270
@@ -1959,5 +1962,3 @@ SceneRoots:
   - {fileID: 1357478745633707593}
   - {fileID: 2602546192910870769}
   - {fileID: 1865836980}
-  - {fileID: 1244972000}
-  - {fileID: 408761941}
