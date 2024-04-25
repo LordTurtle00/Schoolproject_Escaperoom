@@ -11,6 +11,7 @@ TagManager:
   - button4
   - CouldronLiquid
   - wand
+  - testTag
   layers:
   - Default
   - TransparentFX
