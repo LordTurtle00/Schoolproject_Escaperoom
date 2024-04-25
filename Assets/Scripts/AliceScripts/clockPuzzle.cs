@@ -16,10 +16,12 @@ public class clockPuzzle : MonoBehaviour
     float maxDistance = 10f;
     bool puzzleCompleted = false;
     [SerializeField] GameObject wand;
+    public GameObject liquid;
 
     private void Start()
     {
         wand = GameObject.FindGameObjectWithTag("wand");
+        liquid = GameObject.FindGameObjectWithTag("CouldronLiquid");
         wand.SetActive(false);
     }
 
@@ -50,6 +52,16 @@ public class clockPuzzle : MonoBehaviour
         }
     }
 
+    void colorChange()
+    {
+        // Get the Renderer component from liquid
+        var liquidRenderer = liquid.GetComponent<Renderer>();
+
+        // Call SetColor using the shader property name "_Color" and setting the color to red
+        
+        //liquidRenderer.material.SetColor("_Color", Color.red);
+        //Debug.Log("colorChanged reached");
+    }
     private void Update()
     {
         if (!puzzleCompleted)
@@ -64,6 +76,7 @@ public class clockPuzzle : MonoBehaviour
         if(puzzleCompleted)
         {
             wand.SetActive(true);
+            colorChange();
         }
     }
 }
