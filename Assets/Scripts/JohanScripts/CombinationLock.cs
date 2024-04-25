@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
-public class CobinationLock : MonoBehaviour
+public class CombinationLock : MonoBehaviour
 {
+
+    public Vector3[] CorrectValue;
+    
+
     // Start is called before the first frame update
     void Start()
     {
         
+        
     }
 
-
-    public void LockRotate(float dirc)
-    {
-        transform.Rotate(new Vector3(0, dirc, 0));
-    }
-   
+    // Update is called once per frame
     void Update()
     {
+      
         
     }
 }

@@ -10,7 +10,8 @@ public class PickupAndDrop: MonoBehaviour
     [SerializeField] private LayerMask PickUpLayerMask;
 
     private GrabbableObject grabbableObject;
-    private CobinationLock combinationLock;
+    private Dials dials;
+    private CombinationLock combinationLock;
 
     // Update is called once per frame
     private void Update()
@@ -60,9 +61,9 @@ public class PickupAndDrop: MonoBehaviour
         float interact = 2f;
         if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, interact, PickUpLayerMask))
         {
-            if (raycastHit.transform.TryGetComponent(out combinationLock))
+            if (raycastHit.transform.TryGetComponent(out dials))
             {
-                combinationLock.LockRotate(58f);
+                dials.DialRotate(90f);
             }
         }
     }
