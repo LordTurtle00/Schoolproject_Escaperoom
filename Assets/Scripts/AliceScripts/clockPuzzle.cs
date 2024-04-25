@@ -58,8 +58,9 @@ public class clockPuzzle : MonoBehaviour
         var liquidRenderer = liquid.GetComponent<Renderer>();
 
         // Call SetColor using the shader property name "_Color" and setting the color to red
-        liquidRenderer.material.SetColor("_Color", Color.red);
-        Debug.Log("colorChanged reached");
+        
+        //liquidRenderer.material.SetColor("_Color", Color.red);
+        //Debug.Log("colorChanged reached");
     }
     private void Update()
     {
