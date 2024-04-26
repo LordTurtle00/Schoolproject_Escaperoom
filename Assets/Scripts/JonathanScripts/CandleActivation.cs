@@ -18,7 +18,6 @@ public class CandleActivation : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("wand found");
         if (collision.gameObject.tag == "wand" && isLit == false)
         {
             isLit = true;

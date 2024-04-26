@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class clockPuzzle : MonoBehaviour
 {
@@ -35,19 +34,16 @@ public class clockPuzzle : MonoBehaviour
             {
                 //right sequence
                 counter++;
-                Debug.Log("Yippie");
 
                 if(counter == 5)
                 {
                     puzzleCompleted = true;
-                    //Debug.Log("Puzzle completed");
                 }
             }
             else
             {
                 // wrong sequence
                 counter = 1;
-                //Debug.Log("failure");
             }
         }
     }
@@ -55,7 +51,7 @@ public class clockPuzzle : MonoBehaviour
     void colorChange()
     {
         // Get the Renderer component from liquid
-        var liquidRenderer = liquid.GetComponent<Renderer>();
+        //var liquidRenderer = liquid.GetComponent<Renderer>();
 
         // Call SetColor using the shader property name "_Color" and setting the color to red
         
