@@ -161,8 +161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 0, y: 0, z: 0}
-  Anwser: 0
+  Correctrotation: {x: 75, y: 90, z: 90, w: 0}
+  Dial: {fileID: 0}
+  Check: 0
 --- !u!1 &422491115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3852341972610935857, guid: 8445e737b3a69144688cf0d951166128, type: 3}
@@ -313,8 +314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 0, y: 0, z: 0}
-  Anwser: 0
+  Correctrotation: {x: -15, y: 90, z: 90, w: 0}
+  Dial: {fileID: 0}
+  Check: 0
 --- !u!1 &1001358679
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,8 +535,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15.000004, y: -90, z: -90}
-  Anwser: 0
+  Correctrotation: {x: 0.56098557, y: -0.43045935, z: -0.43045935, w: 0.56098557}
+  Dial: {fileID: 1125201959}
+  Check: 0
 --- !u!1 &1172554127
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,13 +726,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CorrectValue:
-  - {x: 15.000004, y: -90, z: -90}
+  - {x: 15, y: -90, z: -90}
   - {x: 75, y: 90, z: 90}
   - {x: -15, y: 90, z: 90}
   - {x: -75, y: -90, z: -90}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 15, y: -90, z: -90}
+  - {x: 75, y: 90, z: 90}
+  - {x: -15, y: 90, z: 90}
 --- !u!1 &1358070036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1596244341404807756, guid: 8445e737b3a69144688cf0d951166128, type: 3}
@@ -768,8 +771,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
-  Anwser: 0
+  Correctrotation: {x: 75, y: 90, z: 90, w: 0}
+  Dial: {fileID: 0}
+  Check: 0
 --- !u!1 &1371350621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4568366434841768013, guid: 8445e737b3a69144688cf0d951166128, type: 3}
@@ -808,8 +812,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: -15, y: 90, z: 90}
-  Anwser: 0
+  Correctrotation: {x: -15, y: 90, z: 90, w: 0}
+  Dial: {fileID: 0}
+  Check: 0
 --- !u!1 &1405900204
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,8 +999,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: -75, y: -90, z: -90}
-  Anwser: 0
+  Correctrotation: {x: -75, y: -90, z: -90, w: 0}
+  Dial: {fileID: 0}
+  Check: 0
 --- !u!1001 &1756244421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1142,8 +1148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 0, y: 0, z: 0}
-  Anwser: 0
+  Correctrotation: {x: 15, y: -90, z: -90, w: 0}
+  Dial: {fileID: 0}
+  Check: 0
 --- !u!1001 &2104281292
 PrefabInstance:
   m_ObjectHideFlags: 0

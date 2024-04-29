@@ -13,7 +13,7 @@ public class PickupAndDrop: MonoBehaviour
     private Dials dials;
     private CombinationLock combinationLock;
 
-    // Update is called once per frame
+    // Shots out a ray from a point on the screen and also makes the objects if GrabbableObject script rotateable
     private void Update()
     {
         
@@ -34,7 +34,7 @@ public class PickupAndDrop: MonoBehaviour
   
     }
    
-    // g�r s� att object kan plockas upp av spelaren
+    // This function makes it so that the player can pick up gameobjects with the GrabbableObject script atached 
     void ShootRay()
     {
         if (grabbableObject == null)
@@ -56,6 +56,7 @@ public class PickupAndDrop: MonoBehaviour
         }
 
     }
+    // Rotates the dils of the code locks in the game
     void LockRay()
     {
         float interact = 2f;
@@ -64,6 +65,7 @@ public class PickupAndDrop: MonoBehaviour
             if (raycastHit.transform.TryGetComponent(out dials))
             {
                 dials.DialRotate(90f);
+                dials.CheckRotation();
             }
         }
     }
