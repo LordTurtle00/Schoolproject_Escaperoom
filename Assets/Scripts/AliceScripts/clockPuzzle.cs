@@ -52,16 +52,17 @@ public class clockPuzzle : MonoBehaviour
         }
     }
 
-    void colorChange()
+    /*void colorChange()
     {
-        // Get the Renderer component from liquid
+        Get the Renderer component from liquid
         var liquidRenderer = liquid.GetComponent<Renderer>();
 
-        // Call SetColor using the shader property name "_Color" and setting the color to red
+        Call SetColor using the shader property name "_Color" and setting the color to red
         
-        //liquidRenderer.material.SetColor("_Color", Color.red);
-        //Debug.Log("colorChanged reached");
+        liquidRenderer.material.SetColor("_Color", Color.red);
+        Debug.Log("colorChanged reached");
     }
+    */
     private void Update()
     {
         if (!puzzleCompleted)
@@ -76,7 +77,7 @@ public class clockPuzzle : MonoBehaviour
         if(puzzleCompleted)
         {
             wand.SetActive(true);
-            colorChange();
+            //colorChange();
         }
     }
 }
