@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class HintSystem : MonoBehaviour
 {
-    public GameObject Player, Candles;
+    public GameObject Player, Candles, table;
     public TextMeshProUGUI hint;
     private clockPuzzle pClock;
     private CandleController pCandle;
+    private weightPuzzle pWeight;
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class HintSystem : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
         pClock = Player.GetComponent<clockPuzzle>();
         pCandle = Candles.GetComponent<CandleController>();
+        pWeight = table.GetComponent<weightPuzzle>();
 
 
     }
@@ -26,10 +28,16 @@ public class HintSystem : MonoBehaviour
         if (!pClock.puzzleCompleted)
         {
             hint.text = "Check the time; Do not delay! These clocks move backwards, look closely, I say!";
-        }else if(pClock.puzzleCompleted && !pCandle.isComplete)
+        }
+        else if(pClock.puzzleCompleted && !pCandle.isComplete)
         {
             hint.text = "The wand of fire is the work of the Devil! You must light the right candles to find the next level!";
         }
+        else if (pClock.puzzleCompleted && pCandle.isComplete && pWeight)
+        {
+            hint.text = "PLACEHOLDERHINT FOR WEIGHT PUZZLE";
+        }
+        
 
 
 
