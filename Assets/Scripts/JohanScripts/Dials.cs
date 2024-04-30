@@ -8,9 +8,10 @@ using UnityEngine;
 public class Dials : MonoBehaviour
 {
     private int DialIndex;
-    public Quaternion Correctrotation;
-    public GameObject Dial;
+    public Vector3  Correctrotation;
+    public GameObject Dial;   
     public bool Check = false;
+    
 
     //When the game starts it randomizes the rotation value of the dials of the lock
     void Start()
@@ -26,21 +27,20 @@ public class Dials : MonoBehaviour
 
      
     }
-
     // Checks so that the rotation of the dial is the correct rotation to open the lock
     public void CheckRotation()
     {
-        Quaternion CurrentRot = Dial.transform.rotation;
-        float AngleDifferance = Quaternion.Angle(CurrentRot, Correctrotation);
-        float Diff = 0.6f;
-
-        if (AngleDifferance < Diff)
-        {
+        Vector3 dialRot = Dial.transform.rotation.eulerAngles;
+        if((int)Correctrotation.x == (int)dialRot.x)
+        {                     
             Check = true;
-            Debug.Log("Rotationen är tillräkligt rätt");
         }
-        
-
+        else
+        {
+            Check = false;
+        }
+        print(Correctrotation);
+        print(dialRot);
     }
-
+ 
 }

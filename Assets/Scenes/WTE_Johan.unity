@@ -161,27 +161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90, w: 0}
-  Dial: {fileID: 0}
+  Correctrotation: {x: 75, y: 90, z: 90}
+  Dial: {fileID: 361929613}
   Check: 0
---- !u!1 &422491115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -3852341972610935857, guid: 8445e737b3a69144688cf0d951166128, type: 3}
-  m_PrefabInstance: {fileID: 2104281292}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &422491119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422491115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98388c8c7cc37274bb074b65f086c082, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CorrectValue: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,8 +296,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: -15, y: 90, z: 90, w: 0}
-  Dial: {fileID: 0}
+  Correctrotation: {x: 345, y: 90, z: 90}
+  Dial: {fileID: 753229629}
   Check: 0
 --- !u!1 &1001358679
 GameObject:
@@ -535,7 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 0.56098557, y: -0.43045935, z: -0.43045935, w: 0.56098557}
+  Correctrotation: {x: 15.000004, y: -90, z: -90}
   Dial: {fileID: 1125201959}
   Check: 0
 --- !u!1 &1172554127
@@ -725,14 +707,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98388c8c7cc37274bb074b65f086c082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CorrectValue:
-  - {x: 15, y: -90, z: -90}
-  - {x: 75, y: 90, z: 90}
-  - {x: -15, y: 90, z: 90}
-  - {x: -75, y: -90, z: -90}
-  - {x: 15, y: -90, z: -90}
-  - {x: 75, y: 90, z: 90}
-  - {x: -15, y: 90, z: 90}
+  AmountOfDials:
+  - {fileID: 1125201959}
+  - {fileID: 1358070036}
+  - {fileID: 1371350621}
+  - {fileID: 1470600995}
+  - {fileID: 1785668606}
+  - {fileID: 361929613}
+  - {fileID: 753229629}
+  Answer: 0
+  RightAnswers: 0
 --- !u!1 &1358070036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1596244341404807756, guid: 8445e737b3a69144688cf0d951166128, type: 3}
@@ -771,8 +755,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90, w: 0}
-  Dial: {fileID: 0}
+  Correctrotation: {x: 75, y: 90, z: 90}
+  Dial: {fileID: 1358070036}
   Check: 0
 --- !u!1 &1371350621 stripped
 GameObject:
@@ -812,8 +796,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: -15, y: 90, z: 90, w: 0}
-  Dial: {fileID: 0}
+  Correctrotation: {x: 345, y: 90, z: 90}
+  Dial: {fileID: 1371350621}
   Check: 0
 --- !u!1 &1405900204
 GameObject:
@@ -999,8 +983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: -75, y: -90, z: -90, w: 0}
-  Dial: {fileID: 0}
+  Correctrotation: {x: 285, y: -90, z: -90}
+  Dial: {fileID: 1470600995}
   Check: 0
 --- !u!1001 &1756244421
 PrefabInstance:
@@ -1148,8 +1132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15, y: -90, z: -90, w: 0}
-  Dial: {fileID: 0}
+  Correctrotation: {x: 15, y: -90, z: -90}
+  Dial: {fileID: 1785668606}
   Check: 0
 --- !u!1001 &2104281292
 PrefabInstance:
@@ -1193,19 +1177,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7244605
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.68931633
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1213,7 +1197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -87.152
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1295,9 +1279,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: -3852341972610935857, guid: 8445e737b3a69144688cf0d951166128, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 422491119}
     - targetCorrespondingSourceObject: {fileID: -3994074001729501332, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1304428273}

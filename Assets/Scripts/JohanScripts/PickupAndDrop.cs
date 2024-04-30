@@ -10,8 +10,7 @@ public class PickupAndDrop: MonoBehaviour
     [SerializeField] private LayerMask PickUpLayerMask;
 
     private GrabbableObject grabbableObject;
-    private Dials dials;
-    private CombinationLock combinationLock;
+   
 
     // Shots out a ray from a point on the screen and also makes the objects if GrabbableObject script rotateable
     private void Update()
@@ -31,7 +30,9 @@ public class PickupAndDrop: MonoBehaviour
         {
             grabbableObject.Rotate(-0.3f);
         }
-  
+       
+       
+
     }
    
     // This function makes it so that the player can pick up gameobjects with the GrabbableObject script atached 
@@ -62,11 +63,22 @@ public class PickupAndDrop: MonoBehaviour
         float interact = 2f;
         if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, interact, PickUpLayerMask))
         {
-            if (raycastHit.transform.TryGetComponent(out dials))
+            Dials d = raycastHit.collider.GetComponent<Dials>();
+            if(d != null)
             {
-                dials.DialRotate(90f);
-                dials.CheckRotation();
+                d.DialRotate(90f);
+               // d.CheckRotation();
+
+
+                //CombinationLock cL = raycastHit.collider.GetComponentInParent<CombinationLock>();
+               // cL.RightCobination()
+
             }
+
+           // raycastHit.collider.GetComponentInParent<CombinationLock>().RightCobination();
+        
         }
     }
+
+    
 }
