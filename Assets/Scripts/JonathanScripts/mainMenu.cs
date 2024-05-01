@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class mainMenu : MonoBehaviour
 {
-
     public void PlayGame()
     {
+        //When PlayGame() is called (happens when the "Play" button is clicked), the game is loaded.
         SceneManager.LoadScene("WTE_Dev 2");
     }
-
     public void QuitApplication()
     {
+        //When QuitApplication() is called (happens when the "Quit" button is clicked), the game closes.
         Application.Quit();
     }
 }
