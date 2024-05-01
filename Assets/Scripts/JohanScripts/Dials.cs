@@ -39,8 +39,8 @@ public class Dials : MonoBehaviour
         {
             Check = false;
         }
-        print(Correctrotation);
-        print(dialRot);
+        //print(Correctrotation);
+        //print(dialRot);
     }
  
 }
