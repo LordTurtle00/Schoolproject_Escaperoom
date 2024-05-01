@@ -33,10 +33,10 @@ public class HintSystem : MonoBehaviour
         {
             hint.text = "The wand of fire is the work of the Devil! You must light the right candles to find the next level!";
         }
-        else if (pClock.puzzleCompleted && pCandle.isComplete && pWeight)
+        /*else if (pClock.puzzleCompleted && pCandle.isComplete && pWeight)
         {
             hint.text = "PLACEHOLDERHINT FOR WEIGHT PUZZLE";
-        }
+        }*/
         
 
 
