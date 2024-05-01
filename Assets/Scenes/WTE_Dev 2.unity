@@ -298,6 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: {fileID: 2057311593}
+  puzzleCompleted: 0
 --- !u!65 &55784720
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5234,6 +5235,67 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1001 &145798117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.4532518
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.56
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 273005b3550408c41a84f797bada727d, type: 2}
+    - target: {fileID: 919132149155446097, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
+      propertyPath: m_Name
+      value: dragonPainting
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82c681d7b5ac255469248f887185f0ab, type: 3}
 --- !u!1 &162558922
 GameObject:
   m_ObjectHideFlags: 0
@@ -13068,6 +13130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 2033449019}
   Candles: {fileID: 668969241}
+  table: {fileID: 0}
   hint: {fileID: 1534840969}
 --- !u!65 &984328815
 BoxCollider:
@@ -22029,3 +22092,4 @@ SceneRoots:
   - {fileID: 4561223717437620294}
   - {fileID: 6032238529109290758}
   - {fileID: 8176571855382935576}
+  - {fileID: 145798117}
