@@ -210,11 +210,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2987339075800264147, guid: 00f421ec944f84a4686e9d3086218f2f, type: 3}
       propertyPath: m_Range
-      value: 14.9
+      value: 7.52
       objectReference: {fileID: 0}
     - target: {fileID: 2987339075800264147, guid: 00f421ec944f84a4686e9d3086218f2f, type: 3}
       propertyPath: m_Intensity
-      value: 1.44
+      value: 1.41
       objectReference: {fileID: 0}
     - target: {fileID: 2987339075800264147, guid: 00f421ec944f84a4686e9d3086218f2f, type: 3}
       propertyPath: m_Shadows.m_Type
