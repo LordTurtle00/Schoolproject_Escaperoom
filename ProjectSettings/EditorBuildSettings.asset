@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/WTE_Menu.unity
     guid: 1b8a7ae3223f005438d5183939bee3ba
   - enabled: 1
-    path: Assets/Scenes/WTE_Dev 2.unity
-    guid: 5f26bb1c8ded0024bbdfa2fbff24e12f
+    path: Assets/Scenes/WTE_Playtest.unity
+    guid: db8b6678396e2ca489216060423eb8fc
   m_configObjects: {}

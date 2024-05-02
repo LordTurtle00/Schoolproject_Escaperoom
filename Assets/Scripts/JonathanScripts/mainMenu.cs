@@ -8,7 +8,7 @@ public class mainMenu : MonoBehaviour
     public void PlayGame()
     {
         //When PlayGame() is called (happens when the "Play" button is clicked), the game is loaded.
-        SceneManager.LoadScene("WTE_Dev 2");
+        SceneManager.LoadScene("WTE_Playtest");
     }
     public void QuitApplication()
     {

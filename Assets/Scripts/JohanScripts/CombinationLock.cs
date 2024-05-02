@@ -11,10 +11,18 @@ public class CombinationLock : MonoBehaviour
     public int RightAnswers = 0;
     private bool IE = true;
 
+    public bool puzzleCompleted = false;
+    public GameObject lidOpen;
+    public GameObject lidClosed;
+
 
     // Start is called before the first frame update
     void Start()
     {
+
+        lidOpen.SetActive(false);
+        lidClosed.SetActive(true);
+
         StartCoroutine(Check());
 
     }
@@ -59,6 +67,11 @@ public class CombinationLock : MonoBehaviour
             {
                 StopCoroutine(Check());
                 IE = false;
+
+                puzzleCompleted = true;
+                lidOpen.SetActive(true);
+                lidClosed.SetActive(false);
+
             }
         }
 
