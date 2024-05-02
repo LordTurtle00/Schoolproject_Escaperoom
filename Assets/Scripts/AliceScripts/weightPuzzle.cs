@@ -5,14 +5,20 @@ using UnityEngine;
 public class weightPuzzle : MonoBehaviour
 {
     public bool puzzleCompleted = false;
-    
+    public GameObject key;
+
     bool weight2kg = false;
     bool weight4kg = false;
     bool weight4kg_1 = false;
     bool weight7kg = false;
     bool weight8kg = false;
-    
-    
+
+    public void Start()
+    {
+        key = GameObject.Find("DoorKey1");
+        key.SetActive(false);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         //Checks when object collides with weight
@@ -45,6 +51,7 @@ public class weightPuzzle : MonoBehaviour
             weight8kg == false)
         {
             Debug.Log("PUZZLE COMPLETED");
+            key.SetActive(true);
             puzzleCompleted = true;
         }
     }
@@ -78,7 +85,9 @@ public class weightPuzzle : MonoBehaviour
                weight8kg == false)
         {
             Debug.Log("PUZZLE COMPLETED");
+            key.SetActive(true);
             puzzleCompleted = true;
+            
         }
     }
 }

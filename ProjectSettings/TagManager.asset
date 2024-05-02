@@ -11,9 +11,9 @@ TagManager:
   - button4
   - CouldronLiquid
   - wand
-  - crown
   - key
   - testTag
+  - orb
   layers:
   - Default
   - TransparentFX
