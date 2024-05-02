@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  Correctrotation: {x: 284.99997, y: 270, z: 270}
   Dial: {fileID: 361929613}
   Check: 0
 --- !u!1001 &368807882
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 345, y: 90, z: 90}
+  Correctrotation: {x: 75, y: 90, z: 90}
   Dial: {fileID: 753229629}
   Check: 0
 --- !u!1001 &774336419
@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  Correctrotation: {x: 345, y: 90, z: 90}
   Dial: {fileID: 1358070036}
   Check: 0
 --- !u!1 &1371350621 stripped
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 345, y: 90, z: 90}
+  Correctrotation: {x: 75, y: 90, z: 90}
   Dial: {fileID: 1371350621}
   Check: 0
 --- !u!1 &1405900204
@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 285, y: -90, z: -90}
+  Correctrotation: {x: 15.000004, y: -90, z: -90}
   Dial: {fileID: 1470600995}
   Check: 0
 --- !u!1001 &1582051313
@@ -1559,7 +1559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15, y: -90, z: -90}
+  Correctrotation: {x: 284.99997, y: 270, z: 270}
   Dial: {fileID: 1785668606}
   Check: 0
 --- !u!1001 &2104281292

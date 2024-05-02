@@ -67,15 +67,10 @@ public class PickupAndDrop: MonoBehaviour
             if(d != null)
             {
                 d.DialRotate(90f);
-               // d.CheckRotation();
-
-
-                //CombinationLock cL = raycastHit.collider.GetComponentInParent<CombinationLock>();
-               // cL.RightCobination()
+               
 
             }
 
-           // raycastHit.collider.GetComponentInParent<CombinationLock>().RightCobination();
         
         }
     }
