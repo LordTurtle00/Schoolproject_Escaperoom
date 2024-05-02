@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class doorScript : MonoBehaviour
 {
@@ -12,6 +11,7 @@ public class doorScript : MonoBehaviour
         //Find the door and key objects
         door = gameObject;
         key = GameObject.FindWithTag("key");
+
     }
     private void OnCollisionEnter(Collision collision)
     {
