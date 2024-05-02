@@ -26,6 +26,7 @@ public class timer : MonoBehaviour
         {
             loseText.text = "Game over";
             timerText.text = "0";
+            Time.timeScale = 0;
         }
 
         
