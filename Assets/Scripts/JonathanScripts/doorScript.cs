@@ -15,7 +15,7 @@ public class doorScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        //Disables the key and door, allowing pasasge through
+        //Disables the key and door, allowing passage through
         if (collision.gameObject == key)
         {
             key.SetActive(false);
