@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupAndDrop: MonoBehaviour
+public class PickupAndDrop : MonoBehaviour
 {
     Ray ray;
     [SerializeField] private Transform PlayerCameraTransform;
@@ -10,12 +10,12 @@ public class PickupAndDrop: MonoBehaviour
     [SerializeField] private LayerMask PickUpLayerMask;
 
     private GrabbableObject grabbableObject;
-   
+
 
     // Shots out a ray from a point on the screen and also makes the objects if GrabbableObject script rotateable
     private void Update()
     {
-        
+
         if (Input.GetKeyDown(KeyCode.E))
         {
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
@@ -30,11 +30,11 @@ public class PickupAndDrop: MonoBehaviour
         {
             grabbableObject.Rotate(-0.3f);
         }
-       
-       
+
+
 
     }
-   
+
     // This function makes it so that the player can pick up gameobjects with the GrabbableObject script atached 
     void ShootRay()
     {
@@ -64,10 +64,16 @@ public class PickupAndDrop: MonoBehaviour
         if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, interact, PickUpLayerMask))
         {
             Dials d = raycastHit.collider.GetComponent<Dials>();
-            if(d != null)
+            if (d != null)
             {
-                d.DialRotate();
+                d.DialRotate(90f);
+
+
             }
+
+
         }
     }
+
+
 }*/
