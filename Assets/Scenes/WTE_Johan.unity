@@ -271,7 +271,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.24000004, y: 0.24000013, z: 0.24000007}
   m_Center: {x: -0.00000011920929, y: 0, z: 0.00000047683716}
---- !u!114 &361929619
+--- !u!114 &361929623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 284.99997, y: 270, z: 270}
+  CorrectRotation: -75
   Dial: {fileID: 361929613}
   Check: 0
 --- !u!1001 &368807882
@@ -594,7 +594,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.24000004, y: 0.24000013, z: 0.24000007}
   m_Center: {x: -0.00000011920929, y: 0, z: 0.0000009536743}
---- !u!114 &753229635
+--- !u!114 &753229639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -606,7 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  CorrectRotation: 75
   Dial: {fileID: 753229629}
   Check: 0
 --- !u!1001 &774336419
@@ -941,7 +941,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.24000004, y: 0.24000013, z: 0.24000007}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1125201965
+--- !u!114 &1125201969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15.000004, y: -90, z: -90}
+  CorrectRotation: 15
   Dial: {fileID: 1125201959}
   Check: 0
 --- !u!1 &1172554127
@@ -1214,6 +1214,9 @@ MonoBehaviour:
   - {fileID: 753229629}
   Answer: 0
   RightAnswers: 0
+  puzzleCompleted: 0
+  lidOpen: {fileID: 0}
+  lidClosed: {fileID: 0}
 --- !u!1 &1358070036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1596244341404807756, guid: 8445e737b3a69144688cf0d951166128, type: 3}
@@ -1240,7 +1243,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.24000004, y: 0.24000013, z: 0.24000007}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1358070042
+--- !u!114 &1358070046
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1252,7 +1255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 345, y: 90, z: 90}
+  CorrectRotation: -15
   Dial: {fileID: 1358070036}
   Check: 0
 --- !u!1 &1371350621 stripped
@@ -1281,7 +1284,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.24000004, y: 0.24000013, z: 0.24000007}
   m_Center: {x: 0, y: -0.00000047683716, z: 0.00000047683716}
---- !u!114 &1371350627
+--- !u!114 &1371350631
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1293,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  CorrectRotation: 75
   Dial: {fileID: 1371350621}
   Check: 0
 --- !u!1 &1405900204
@@ -1468,7 +1471,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.24000004, y: 0.24000013, z: 0.24000007}
   m_Center: {x: -0.00000011920929, y: -0.00000023841858, z: 0.00000047683716}
---- !u!114 &1470601001
+--- !u!114 &1470601005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1480,7 +1483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15.000004, y: -90, z: -90}
+  CorrectRotation: 15
   Dial: {fileID: 1470600995}
   Check: 0
 --- !u!1001 &1582051313
@@ -1678,7 +1681,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.24000004, y: 0.24000013, z: 0.24000007}
   m_Center: {x: -0.00000023841858, y: -0.00000047683716, z: 0.0000009536743}
---- !u!114 &1785668612
+--- !u!114 &1785668616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1690,7 +1693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 284.99997, y: 270, z: 270}
+  CorrectRotation: -75
   Dial: {fileID: 1785668606}
   Check: 0
 --- !u!1001 &2104281292
@@ -1845,43 +1848,43 @@ PrefabInstance:
       addedObject: {fileID: 1125201963}
     - targetCorrespondingSourceObject: {fileID: -5322640209134657159, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1125201965}
+      addedObject: {fileID: 1125201969}
     - targetCorrespondingSourceObject: {fileID: -1596244341404807756, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1358070041}
     - targetCorrespondingSourceObject: {fileID: -1596244341404807756, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1358070042}
+      addedObject: {fileID: 1358070046}
     - targetCorrespondingSourceObject: {fileID: 4568366434841768013, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1371350626}
     - targetCorrespondingSourceObject: {fileID: 4568366434841768013, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1371350627}
+      addedObject: {fileID: 1371350631}
     - targetCorrespondingSourceObject: {fileID: 83748428578580417, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1470601000}
     - targetCorrespondingSourceObject: {fileID: 83748428578580417, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1470601001}
+      addedObject: {fileID: 1470601005}
     - targetCorrespondingSourceObject: {fileID: -8942803767544462003, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1785668611}
     - targetCorrespondingSourceObject: {fileID: -8942803767544462003, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1785668612}
+      addedObject: {fileID: 1785668616}
     - targetCorrespondingSourceObject: {fileID: 7176131184441728540, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
       addedObject: {fileID: 361929618}
     - targetCorrespondingSourceObject: {fileID: 7176131184441728540, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 361929619}
+      addedObject: {fileID: 361929623}
     - targetCorrespondingSourceObject: {fileID: 1023862697221993259, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
       addedObject: {fileID: 753229634}
     - targetCorrespondingSourceObject: {fileID: 1023862697221993259, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 753229635}
+      addedObject: {fileID: 753229639}
   m_SourcePrefab: {fileID: 100100000, guid: 8445e737b3a69144688cf0d951166128, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
