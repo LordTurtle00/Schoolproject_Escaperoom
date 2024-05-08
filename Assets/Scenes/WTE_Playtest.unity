@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  CorrectRotation: 0
   Dial: {fileID: 1715435395}
   Check: 0
 --- !u!65 &30241563
@@ -6063,7 +6063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 284.99997, y: 270, z: 270}
+  CorrectRotation: 0
   Dial: {fileID: 1715435397}
   Check: 0
 --- !u!65 &131482828
@@ -11273,9 +11273,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7922049125771261276, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7922049125771261276, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7922049125771261276, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7922049125771261276, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7922049125771261276, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7922049125771261276, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: -5322640209134657159, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_Name
       value: Dial1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5161335221134717023, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5161335221134717023, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5161335221134717023, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5161335221134717023, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5161335221134717023, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -5161335221134717023, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -4785011547582087695, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11301,6 +11349,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dial2
       objectReference: {fileID: 0}
+    - target: {fileID: -1119746172599276904, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1119746172599276904, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1119746172599276904, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1119746172599276904, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -1119746172599276904, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -1119746172599276904, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 83748428578580417, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_Name
       value: Dial4
@@ -11309,6 +11381,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14bedb20e3cf46f41b08986d415b9c67, type: 2}
+    - target: {fileID: 491391825794998109, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 491391825794998109, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 491391825794998109, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 491391825794998109, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 491391825794998109, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 491391825794998109, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_Name
       value: NewCodeLock
@@ -11329,6 +11425,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14bedb20e3cf46f41b08986d415b9c67, type: 2}
+    - target: {fileID: 3159060341182765561, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159060341182765561, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159060341182765561, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159060341182765561, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159060341182765561, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159060341182765561, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 4568366434841768013, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_Name
       value: Dial3
@@ -11337,6 +11457,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14bedb20e3cf46f41b08986d415b9c67, type: 2}
+    - target: {fileID: 6067561959688761127, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067561959688761127, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067561959688761127, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067561959688761127, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067561959688761127, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067561959688761127, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 7176131184441728540, guid: 8445e737b3a69144688cf0d951166128, type: 3}
       propertyPath: m_Name
       value: Dial6
@@ -11345,6 +11489,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 14bedb20e3cf46f41b08986d415b9c67, type: 2}
+    - target: {fileID: 9180308745524854355, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180308745524854355, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180308745524854355, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180308745524854355, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180308745524854355, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180308745524854355, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9180308745524854355, guid: 8445e737b3a69144688cf0d951166128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11522,7 +11694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  CorrectRotation: 75
   Dial: {fileID: 211826993}
   Check: 0
 --- !u!65 &211826996
@@ -17063,7 +17235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2823468300585586789, guid: e17c8de937a007c46affcddbd15c3043, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.31
+      value: 13.6
       objectReference: {fileID: 0}
     - target: {fileID: 2823468300585586789, guid: e17c8de937a007c46affcddbd15c3043, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17523,7 +17695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  CorrectRotation: 0
   Dial: {fileID: 1715435399}
   Check: 0
 --- !u!65 &440973520
@@ -19632,7 +19804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15.000004, y: -90, z: -90}
+  CorrectRotation: 15
   Dial: {fileID: 1002028967}
   Check: 0
 --- !u!65 &1002028970
@@ -19766,7 +19938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 345, y: 90, z: 90}
+  CorrectRotation: -15
   Dial: {fileID: 1037274336}
   Check: 0
 --- !u!65 &1037274339
@@ -21077,7 +21249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 284.99997, y: 270, z: 270}
+  CorrectRotation: -75
   Dial: {fileID: 1338274767}
   Check: 0
 --- !u!65 &1338274770
@@ -21118,7 +21290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 75, y: 90, z: 90}
+  CorrectRotation: 75
   Dial: {fileID: 1365628680}
   Check: 0
 --- !u!65 &1365628683
@@ -21890,7 +22062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15.000004, y: -90, z: -90}
+  CorrectRotation: 15
   Dial: {fileID: 1551963160}
   Check: 0
 --- !u!65 &1551963163
@@ -23224,7 +23396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15.000004, y: -90, z: -90}
+  CorrectRotation: 0
   Dial: {fileID: 1715435398}
   Check: 0
 --- !u!65 &1715435404
@@ -23260,7 +23432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 345, y: 90, z: 90}
+  CorrectRotation: 0
   Dial: {fileID: 1715435400}
   Check: 0
 --- !u!65 &1715435406
@@ -23941,7 +24113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 284.99997, y: 270, z: 270}
+  CorrectRotation: -75
   Dial: {fileID: 1844273205}
   Check: 0
 --- !u!65 &1844273208
@@ -24094,7 +24266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 15.000004, y: -90, z: -90}
+  CorrectRotation: 0
   Dial: {fileID: 1715435401}
   Check: 0
 --- !u!65 &1886866752
@@ -25238,7 +25410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d7c6a395904df4a9eb483b7df3f6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Correctrotation: {x: 284.99997, y: 270, z: 270}
+  CorrectRotation: 0
   Dial: {fileID: 1715435396}
   Check: 0
 --- !u!65 &2040800149
