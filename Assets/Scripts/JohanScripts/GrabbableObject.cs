@@ -15,14 +15,16 @@ public class GrabbableObject : MonoBehaviour
     public void Grab(Transform GrabPointTransform)
     {
         this.GrabPointTransform = GrabPointTransform;
-        rb.isKinematic = true;
+        rb.useGravity = false;
+        //rb.isKinematic = true;
     }
 
     public void Drop()
     {
         
         this.GrabPointTransform = null;
-        rb.isKinematic = false;
+        rb.useGravity = true;
+        //rb.isKinematic = false;
     }
 
     public void Rotate(float dir)
