@@ -11,6 +11,9 @@ TagManager:
   - button4
   - CouldronLiquid
   - wand
+  - key
+  - testTag
+  - orb
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Magic
   - 
   - 
   - 

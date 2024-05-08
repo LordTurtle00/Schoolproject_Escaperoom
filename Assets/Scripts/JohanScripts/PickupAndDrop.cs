@@ -66,14 +66,8 @@ public class PickupAndDrop: MonoBehaviour
             Dials d = raycastHit.collider.GetComponent<Dials>();
             if(d != null)
             {
-                d.DialRotate(90f);
-               
-
+                d.DialRotate();
             }
-
-        
         }
     }
-
-    
 }
