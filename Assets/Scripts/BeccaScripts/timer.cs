@@ -1,18 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class timer : MonoBehaviour
 {
     public float timeLeft = 600.0f;
+    public float textTimer = 5.0f;
+    float currentTextTimer = 0;
+
     public TMP_Text timerText;
     public TMP_Text loseText;
+    public TMP_Text warningText;
+    public Button restartButton;
+    public Button exitButton;
+
+    public GameObject warningTextObj;
+    public GameObject exitButtonObj;
+    public GameObject restartButtonObj;
+
+    bool currentTimerTextSet = false;
+    bool warningFiveMin = false;
+    bool warningOneMin = false;
+
     // Start is called before the first frame update
     void Start()
     {
         loseText.text = "";
+        warningTextObj.SetActive(false);
+        exitButtonObj.SetActive(false);
+        restartButtonObj.SetActive(false);
     }
 
     // Update is called once per frame
@@ -20,17 +40,69 @@ public class timer : MonoBehaviour
     {
         timeLeft -= Time.deltaTime;
 
-        timerText.text = timeLeft.ToString();
+        timerText.text = Mathf.Round(timeLeft).ToString();
+
+        if (timeLeft <= 300.0f && timeLeft > 295.0f && !warningFiveMin)
+        {
+            if(!currentTimerTextSet)
+            {
+                currentTextTimer = textTimer;
+                currentTimerTextSet = true;
+                warningTextObj.SetActive(true);
+            }
+
+            currentTextTimer -= Time.deltaTime;
+
+            if(currentTextTimer <= 0.1f)
+            {
+                warningText.text = "1 minute left"; 
+                currentTimerTextSet = false;
+                warningTextObj.SetActive(false);
+                warningFiveMin = true;
+            }
+        }
+
+        if (timeLeft <= 60.0f &&  timeLeft > 55.0f && !warningOneMin)
+        {
+            if (!currentTimerTextSet)
+            {
+                currentTextTimer = textTimer;
+                currentTimerTextSet = true;
+                warningTextObj.SetActive(true);
+            }
+
+            currentTextTimer -= Time.deltaTime;
+
+            if(currentTextTimer <= 0.1f)
+            {
+                currentTimerTextSet = false;
+                warningTextObj.SetActive(false);
+                warningOneMin = true;
+            }
+        }
 
         if (timeLeft <= 0.0f) 
         {
             loseText.text = "Game over";
-            timerText.text = "0";
+            exitButtonObj.SetActive(true);
+            restartButtonObj.SetActive(true);
             Time.timeScale = 0;
+
+            exitButton.onClick.AddListener(exitGame);
+            restartButton.onClick.AddListener(restartGame);
         }
 
         
         
 
+    }
+    void exitGame()
+    {
+        Application.Quit();
+    }
+    
+    void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
