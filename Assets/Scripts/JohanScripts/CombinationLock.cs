@@ -16,12 +16,12 @@ public class CombinationLock : MonoBehaviour
     public GameObject lidClosed;
 
 
-    // Start is called before the first frame update
+    // Sets up the lid animation and starts a timed check every second
     void Start()
     {
 
-        //lidOpen.SetActive(false);
-        //lidClosed.SetActive(true);
+        lidOpen.SetActive(false);
+        lidClosed.SetActive(true);
 
         StartCoroutine(Check());
 
@@ -48,6 +48,7 @@ public class CombinationLock : MonoBehaviour
         }
         
     }
+    //Checks so that all the dils on the lock are in the correct possision
     IEnumerator Check()
     {
         while (IE == true)
@@ -65,8 +66,8 @@ public class CombinationLock : MonoBehaviour
                 IE = false;
 
                 puzzleCompleted = true;
-               // lidOpen.SetActive(true);
-                //lidClosed.SetActive(false);
+                lidOpen.SetActive(true);
+                lidClosed.SetActive(false);
 
             }
         }
