@@ -6,24 +6,26 @@ using UnityEngine.UIElements;
 
 public class clockPuzzle : MonoBehaviour
 {
-    // Description of script:
-    // use counter in combination with tags to check right button
-    // button tags: button1, button2 ... button4
+    /*Description of script:
+        uses counter in combination with tags to check right button
+        button tags: button1, button2 ... button4*/
 
     int counter = 1;
     Ray ray;
     float maxDistance = 10f;
     public bool puzzleCompleted = false;
     [SerializeField] GameObject wand;
-    public GameObject liquid;
+
+    public bool buttonPressed = false;
+
 
     private void Start()
     {
         wand = GameObject.FindGameObjectWithTag("wand");
-        liquid = GameObject.FindGameObjectWithTag("CouldronLiquid");
         wand.SetActive(false);
     }
 
+    
     void buttonRay()
     {
         if (Physics.Raycast(ray, out RaycastHit hitInfo, maxDistance))
@@ -32,9 +34,10 @@ public class clockPuzzle : MonoBehaviour
             _tag = "button" + counter.ToString();
             if (hitInfo.collider.gameObject.CompareTag(_tag))
             {
+                buttonPressed = true;
+
                 //right sequence
                 counter++;
-
                 if(counter == 5)
                 {
                     puzzleCompleted = true;
@@ -48,17 +51,6 @@ public class clockPuzzle : MonoBehaviour
         }
     }
 
-    /*void colorChange()
-    {
-        Get the Renderer component from liquid
-        var liquidRenderer = liquid.GetComponent<Renderer>();
-
-        Call SetColor using the shader property name "_Color" and setting the color to red
-        
-        liquidRenderer.material.SetColor("_Color", Color.red);
-        Debug.Log("colorChanged reached");
-    }
-    */
     private void Update()
     {
         if (!puzzleCompleted)
@@ -73,7 +65,7 @@ public class clockPuzzle : MonoBehaviour
         if(puzzleCompleted)
         {
             wand.SetActive(true);
-            //colorChange();
+
         }
     }
 }

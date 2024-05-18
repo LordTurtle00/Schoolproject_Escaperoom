@@ -20,7 +20,7 @@ public class paintingDelivery : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //when object with tag crown collides with hand, the key will active and be visible
+        //when object with tag crown collides with hand, the key will active and visible
         if (collision.gameObject.tag == "orb")
         {
             key.SetActive(true);

@@ -19408,8 +19408,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLeft: 600
+  textTimer: 5
   timerText: {fileID: 0}
   loseText: {fileID: 0}
+  warningText: {fileID: 0}
+  restartButton: {fileID: 0}
+  exitButton: {fileID: 0}
+  warningTextObj: {fileID: 0}
+  exitButtonObj: {fileID: 0}
+  restartButtonObj: {fileID: 0}
 --- !u!114 &882762520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19423,8 +19430,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLeft: 600
+  textTimer: 5
   timerText: {fileID: 882762518}
   loseText: {fileID: 1589873339}
+  warningText: {fileID: 0}
+  restartButton: {fileID: 0}
+  exitButton: {fileID: 0}
+  warningTextObj: {fileID: 0}
+  exitButtonObj: {fileID: 0}
+  restartButtonObj: {fileID: 0}
 --- !u!222 &882762521
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20410,7 +20424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.648
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21701,7 +21715,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzleCompleted: 0
   wand: {fileID: 86461634}
-  liquid: {fileID: 0}
 --- !u!114 &1475538934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22423,8 +22436,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLeft: 600
+  textTimer: 5
   timerText: {fileID: 882762518}
   loseText: {fileID: 1589873339}
+  warningText: {fileID: 0}
+  restartButton: {fileID: 0}
+  exitButton: {fileID: 0}
+  warningTextObj: {fileID: 0}
+  exitButtonObj: {fileID: 0}
+  restartButtonObj: {fileID: 0}
 --- !u!114 &1589873339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23936,7 +23956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.74
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24203,7 +24223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.68
+      value: 1.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24716,11 +24736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6
+      value: 1.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bc4843ccd8d6a134d9939662ed660911, type: 3}
       propertyPath: m_LocalPosition.z

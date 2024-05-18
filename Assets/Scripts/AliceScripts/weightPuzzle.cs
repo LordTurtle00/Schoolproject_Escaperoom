@@ -84,7 +84,6 @@ public class weightPuzzle : MonoBehaviour
                weight2kg == false &&
                weight8kg == false)
         {
-            Debug.Log("PUZZLE COMPLETED");
             key.SetActive(true);
             puzzleCompleted = true;
             
