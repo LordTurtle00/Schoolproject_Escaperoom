@@ -45,12 +45,11 @@ public class weightPuzzle : MonoBehaviour
 
         //When all the correct weight are on, puzzle gets completed
         if (weight4kg == true &&
-            weight4kg_1 ==true &&
+            weight4kg_1 == true &&
             weight7kg == true &&
             weight2kg == false &&
             weight8kg == false)
         {
-            Debug.Log("PUZZLE COMPLETED");
             key.SetActive(true);
             puzzleCompleted = true;
         }

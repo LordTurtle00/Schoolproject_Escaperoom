@@ -5,21 +5,54 @@ using UnityEngine;
 public class buttonController : MonoBehaviour
 {
     public GameObject Player;
-    public Animator animator;
+    [SerializeField] private Animator animator1;
+    [SerializeField] private Animator animator2;
+    [SerializeField] private Animator animator3;
+    [SerializeField] private Animator animator4;
 
-
-    // Start is called before the first frame update
-    void Start()
+    private void buttonCheck()
     {
+        if (Player.GetComponent<clockPuzzle>().player_buttonPressed1)
+        {
+            animator1.SetBool("buttonPressed1", true);
+        }
+        else if (!Player.GetComponent<clockPuzzle>().player_buttonPressed1)
+        {
+            animator1.SetBool("buttonPressed1", false);
+        }
+
+
+        if (Player.GetComponent<clockPuzzle>().player_buttonPressed2)
+        {
+            animator2.SetBool("buttonPressed2", true);
+        }
+        else if (!Player.GetComponent<clockPuzzle>().player_buttonPressed2)
+        {
+            animator2.SetBool("buttonPressed2", false);
+        }
+
+        if (Player.GetComponent<clockPuzzle>().player_buttonPressed3)
+        {
+            animator3.SetBool("buttonPressed3", true);
+        }
+        else if (!Player.GetComponent<clockPuzzle>().player_buttonPressed3)
+        {
+            animator3.SetBool("buttonPressed3", false);
+        }
+
+
+        if (Player.GetComponent<clockPuzzle>().player_buttonPressed4)
+        {
+            animator4.SetBool("buttonPressed4", true);
+        }
+        else if (!Player.GetComponent<clockPuzzle>().player_buttonPressed4)
+        {
+            animator4.SetBool("buttonPressed4", false);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Player.GetComponent<clockPuzzle>().buttonPressed)
-        {
-            print("knapp tryckt");
-            animator.SetBool("buttonPressed", true);
-        }
+        buttonCheck();
     }
 }
