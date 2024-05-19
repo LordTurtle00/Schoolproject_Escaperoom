@@ -13,6 +13,7 @@ public class HintSystem : MonoBehaviour
 
     void Start()
     {
+        //THIS SCRIPT IS DISCONTINUED AS WE ARE NO LONGER USING THIS SYSTEM TO GIVE HINTS
         hint.enabled = false;
         Player = GameObject.FindGameObjectWithTag("Player");
         pClock = Player.GetComponent<clockPuzzle>();
