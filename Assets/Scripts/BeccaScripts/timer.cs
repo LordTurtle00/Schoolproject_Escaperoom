@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,10 +18,12 @@ public class timer : MonoBehaviour
     public TMP_Text warningText;
     public Button restartButton;
     public Button exitButton;
+    [SerializeField] public GameObject cam;
 
     public GameObject warningTextObj;
     public GameObject exitButtonObj;
     public GameObject restartButtonObj;
+    public GameObject player;
 
     bool currentTimerTextSet = false;
     bool warningFiveMin = false;
@@ -29,10 +32,14 @@ public class timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timeLeft = 5.0f;
+        textTimer = 5.0f;
+        currentTextTimer = 0;
         loseText.text = "";
         warningTextObj.SetActive(false);
         exitButtonObj.SetActive(false);
         restartButtonObj.SetActive(false);
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -41,6 +48,8 @@ public class timer : MonoBehaviour
         timeLeft -= Time.deltaTime;
 
         timerText.text = Mathf.Round(timeLeft).ToString();
+
+        print("hejhejehjehje");
 
         if (timeLeft <= 300.0f && timeLeft > 295.0f && !warningFiveMin)
         {
@@ -86,23 +95,30 @@ public class timer : MonoBehaviour
             loseText.text = "Game over";
             exitButtonObj.SetActive(true);
             restartButtonObj.SetActive(true);
-            Time.timeScale = 0;
+            timerText.text = "0";
+            player.GetComponent<PlayerMovement>().Speed = 0;
+            cam.GetComponent<CameraController>().Sensitivity = 0;
 
-            exitButton.onClick.AddListener(exitGame);
-            restartButton.onClick.AddListener(restartGame);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
         }
 
         
         
 
     }
-    void exitGame()
+    public void exitGame()
     {
         Application.Quit();
+        Debug.Log("exit");
     }
     
-    void restartGame()
+    public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("restart");
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
