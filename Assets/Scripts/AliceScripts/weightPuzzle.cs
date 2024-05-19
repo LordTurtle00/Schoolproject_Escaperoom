@@ -15,7 +15,7 @@ public class weightPuzzle : MonoBehaviour
 
     public void Start()
     {
-        key = GameObject.Find("DoorKey (1)");
+        key = GameObject.Find("DoorKey 3");
         key.SetActive(false);
     }
 

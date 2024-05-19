@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class winGame : MonoBehaviour
@@ -25,4 +26,23 @@ public class winGame : MonoBehaviour
 
         }
     }
+    public void winRestart()
+    {
+        Time.timeScale = 1;
+        cam.GetComponent<CameraController>().Sensitivity = 2;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        SceneManager.LoadScene("BMB_FinalScene");
+    }
+    public void returnToMenu()
+    {
+        Time.timeScale = 1;
+        cam.GetComponent<CameraController>().Sensitivity = 2;
+        SceneManager.LoadScene("WTE_Menu");
+    }
+    public void winExit()
+    {
+        Application.Quit();
+    }
+
 }

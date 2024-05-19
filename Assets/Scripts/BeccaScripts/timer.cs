@@ -60,19 +60,28 @@ public class timer : MonoBehaviour
 
             currentTextTimer -= Time.deltaTime;
 
-            if(currentTextTimer <= 0.1f)
-            {
-                warningText.text = "1 minute left"; 
-                currentTimerTextSet = false;
-                warningTextObj.SetActive(false);
-                warningFiveMin = true;
-            }
+            //if (currentTextTimer <= 295.0f)
+            //{
+            //    warningText.text = "1 minute left";
+            //    currentTimerTextSet = false;
+            //    warningTextObj.SetActive(false);
+            //    warningFiveMin = true;
+            //}
+        }
+
+        if (timeLeft <= 295.0f && timeLeft > 60.0f)
+        {
+            warningText.text = "1 minute left";
+            currentTimerTextSet = false;
+            warningTextObj.SetActive(false);
+            warningFiveMin = false;
         }
 
         if (timeLeft <= 60.0f &&  timeLeft > 55.0f && !warningOneMin)
         {
             if (!currentTimerTextSet)
             {
+                warningText.text = "1 minute left";
                 currentTextTimer = textTimer;
                 currentTimerTextSet = true;
                 warningTextObj.SetActive(true);
@@ -86,6 +95,12 @@ public class timer : MonoBehaviour
                 warningTextObj.SetActive(false);
                 warningOneMin = true;
             }
+        }
+        if (timeLeft < 55.0f)
+        {
+            currentTimerTextSet = false;
+            warningTextObj.SetActive(false);
+
         }
 
         if (timeLeft <= 0.0f) 

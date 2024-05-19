@@ -16,8 +16,6 @@ public class petNameController : MonoBehaviour
         dial5 = transform.Find("pCylinder5");
         dial6 = transform.Find("pCylinder6");
         dial7 = transform.Find("pCylinder7");
-        movingObj = GameObject.Find("petPuzzleMove");
-        
     }
 
     // Update 
@@ -32,7 +30,7 @@ public class petNameController : MonoBehaviour
             dial7.GetComponent<petNameDial>().dialPos == 2)
         {
             //dörren försvinner då rätt kombination skickas in
-            movingObj.transform.TransformDirection(0.0f, 0.0f, 3.0f);
+            movingObj.transform.position = new Vector3(-2.956f, 1.349f, 2.456f);
         }
     }
 }
