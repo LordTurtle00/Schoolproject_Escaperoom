@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class petNameController : MonoBehaviour
 {
+    //Defining and finding the Dials and Door gameobjects
     public Transform dial1, dial2, dial3, dial4, dial5, dial6, dial7;
+    public GameObject door;
     void Start()
     {
         dial1 = transform.Find("pCylinder1");
@@ -14,10 +16,11 @@ public class petNameController : MonoBehaviour
         dial5 = transform.Find("pCylinder5");
         dial6 = transform.Find("pCylinder6");
         dial7 = transform.Find("pCylinder7");
+        door = GameObject.Find("petPuzzleDoor");
         
     }
 
-    // Update is called once per frame
+    // Update 
     void Update()
     {
         if (dial1.GetComponent<petNameDial>().dialPos == 4 &&
@@ -28,7 +31,8 @@ public class petNameController : MonoBehaviour
             dial6.GetComponent<petNameDial>().dialPos == 3 &&
             dial7.GetComponent<petNameDial>().dialPos == 2)
         {
-            print("puzzle complete");
+            //dörren försvinner då rätt kombination skickas in
+            door.SetActive(false);
         }
     }
 }
