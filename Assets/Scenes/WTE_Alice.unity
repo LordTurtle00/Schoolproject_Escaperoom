@@ -13419,9 +13419,11 @@ MonoBehaviour:
   warningText: {fileID: 0}
   restartButton: {fileID: 0}
   exitButton: {fileID: 0}
+  cam: {fileID: 0}
   warningTextObj: {fileID: 0}
   exitButtonObj: {fileID: 0}
   restartButtonObj: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &882762520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13441,9 +13443,11 @@ MonoBehaviour:
   warningText: {fileID: 0}
   restartButton: {fileID: 0}
   exitButton: {fileID: 0}
+  cam: {fileID: 0}
   warningTextObj: {fileID: 0}
   exitButtonObj: {fileID: 0}
   restartButtonObj: {fileID: 0}
+  player: {fileID: 0}
 --- !u!222 &882762521
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15919,9 +15923,11 @@ MonoBehaviour:
   warningText: {fileID: 0}
   restartButton: {fileID: 0}
   exitButton: {fileID: 0}
+  cam: {fileID: 0}
   warningTextObj: {fileID: 0}
   exitButtonObj: {fileID: 0}
   restartButtonObj: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &1589873339
 MonoBehaviour:
   m_ObjectHideFlags: 0
