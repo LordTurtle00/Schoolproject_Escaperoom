@@ -6,7 +6,7 @@ public class petNameController : MonoBehaviour
 {
     //Defining and finding the Dials and Door gameobjects
     public Transform dial1, dial2, dial3, dial4, dial5, dial6, dial7;
-    public GameObject door;
+    public GameObject movingObj;
     void Start()
     {
         dial1 = transform.Find("pCylinder1");
@@ -16,7 +16,7 @@ public class petNameController : MonoBehaviour
         dial5 = transform.Find("pCylinder5");
         dial6 = transform.Find("pCylinder6");
         dial7 = transform.Find("pCylinder7");
-        door = GameObject.Find("petPuzzleDoor");
+        movingObj = GameObject.Find("petPuzzleMove");
         
     }
 
@@ -32,7 +32,7 @@ public class petNameController : MonoBehaviour
             dial7.GetComponent<petNameDial>().dialPos == 2)
         {
             //dörren försvinner då rätt kombination skickas in
-            door.SetActive(false);
+            movingObj.transform.TransformDirection(0.0f, 0.0f, 3.0f);
         }
     }
 }

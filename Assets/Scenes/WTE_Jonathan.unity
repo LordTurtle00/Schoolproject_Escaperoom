@@ -6240,9 +6240,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a55273bbf91fd74b821a655246f6ae0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 701517836}
     - targetCorrespondingSourceObject: {fileID: -3994074001729501332, guid: 3a55273bbf91fd74b821a655246f6ae0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 610290320}
@@ -7252,6 +7249,7 @@ MonoBehaviour:
   dial5: {fileID: 0}
   dial6: {fileID: 0}
   dial7: {fileID: 0}
+  door: {fileID: 0}
 --- !u!1 &648170854
 GameObject:
   m_ObjectHideFlags: 0
@@ -7468,24 +7466,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668413460}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &701517834 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3a55273bbf91fd74b821a655246f6ae0, type: 3}
-  m_PrefabInstance: {fileID: 333503206}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &701517836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 701517834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3626cebb7aae6134885f0208f2bfd31c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialPos: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -13848,7 +13828,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzleCompleted: 0
   wand: {fileID: 1397974807}
-  liquid: {fileID: 0}
+  player_buttonPressed1: 0
+  player_buttonPressed2: 0
+  player_buttonPressed3: 0
+  player_buttonPressed4: 0
 --- !u!114 &1278577829
 MonoBehaviour:
   m_ObjectHideFlags: 0

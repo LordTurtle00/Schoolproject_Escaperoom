@@ -32,8 +32,8 @@ public class timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeLeft = 5.0f;
-        textTimer = 5.0f;
+        timeLeft = 600.0f;
+        textTimer = 600.0f;
         currentTextTimer = 0;
         loseText.text = "";
         warningTextObj.SetActive(false);
@@ -48,8 +48,6 @@ public class timer : MonoBehaviour
         timeLeft -= Time.deltaTime;
 
         timerText.text = Mathf.Round(timeLeft).ToString();
-
-        print("hejhejehjehje");
 
         if (timeLeft <= 300.0f && timeLeft > 295.0f && !warningFiveMin)
         {
@@ -111,13 +109,11 @@ public class timer : MonoBehaviour
     public void exitGame()
     {
         Application.Quit();
-        Debug.Log("exit");
     }
     
     public void restartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Debug.Log("restart");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

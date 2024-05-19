@@ -15,6 +15,7 @@ TagManager:
   - testTag
   - orb
   - petDial
+  - symbolDial
   layers:
   - Default
   - TransparentFX

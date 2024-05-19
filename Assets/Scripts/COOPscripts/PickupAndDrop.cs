@@ -22,7 +22,7 @@ public class PickupAndDrop: MonoBehaviour
             ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
             ShootRay();
             rayHitDials();
-            LockRay();
+            //LockRay();
         }
         if (Input.GetKey(KeyCode.O))
         {
@@ -60,6 +60,7 @@ public class PickupAndDrop: MonoBehaviour
 
     }
 
+    //rayHitDials was made by Jonathan, rest was Johan
     void rayHitDials()
     {
         if (Physics.Raycast(ray, out RaycastHit hitInfo, 10f))
@@ -70,27 +71,41 @@ public class PickupAndDrop: MonoBehaviour
                 hitDial.GetComponent<petNameDial>().dialPos += 1;
                 if (hitDial.GetComponent<petNameDial>().dialPos == 5)
                 {
-                    hitDial.transform.Rotate(-90.0f, 0.0f, 0.0f, Space.World);
+                    hitDial.transform.Rotate(0.0f, 0.0f, -90.0f, Space.World);
                     hitDial.GetComponent<petNameDial>().dialPos = 1;
                 }
                 else
                 {
-                    hitDial.transform.Rotate(-90.0f, 0.0f, 0.0f, Space.World);
+                    hitDial.transform.Rotate(0.0f, 0.0f, -90.0f, Space.World);
+                }
+            }
+            if (hitInfo.collider.gameObject.CompareTag("symbolDial"))
+            {
+                hitDial = hitInfo.collider.gameObject;
+                hitDial.GetComponent<symbolDials>().dialPos += 1;
+                if (hitDial.GetComponent<symbolDials>().dialPos == 5)
+                {
+                    hitDial.transform.Rotate(0.0f, 0.0f, -90.0f, Space.World);
+                    hitDial.GetComponent<symbolDials>().dialPos = 1;
+                }
+                else
+                {
+                    hitDial.transform.Rotate(0.0f, 0.0f, -90.0f, Space.World);
                 }
             }
         }
     }
     // Rotates the dils of the code locks in the game
-    void LockRay()
-    {
-        float interact = 2f;
-        if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, interact, PickUpLayerMask))
-        {
-            Dials d = raycastHit.collider.GetComponent<Dials>();
-            if(d != null)
-            {
-                d.DialRotate();
-            }
-        }
-    }
+//    void LockRay()
+//    {
+//        float interact = 2f;
+//        if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, interact, PickUpLayerMask))
+//        {
+//            Dials d = raycastHit.collider.GetComponent<Dials>();
+//            if(d != null)
+//            {
+//                d.DialRotate();
+//            }
+//        }
+//    }
 }
