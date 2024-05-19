@@ -27,7 +27,6 @@ public class Dials : MonoBehaviour
     // Checks so that the rotation of the dial is the correct rotation to open the lock
     public void CheckRotation()
     {
-        // fråga inte det är unity som är blä, usch..
         float dialRot = Dial.transform.localRotation.eulerAngles.x;
         dialRot = Mathf.FloorToInt(dialRot);
         if (dialRot > 180)

@@ -13,7 +13,7 @@ public class PickupAndDrop: MonoBehaviour
     public GameObject hitDial;
    
 
-    // Shots out a ray from a point on the screen and also makes the objects if GrabbableObject script rotateable
+    // Shots out a ray from a point on the screen and also makes the objects if they have GrabbableObject script on them rotateable
     private void Update()
     {
         
@@ -37,7 +37,7 @@ public class PickupAndDrop: MonoBehaviour
 
     }
    
-    // This function makes it so that the player can pick up gameobjects with the GrabbableObject script atached 
+    // This function makes it so that the player can pick up gameobjects with the GrabbableObject script atached and drop them 
     void ShootRay()
     {
         if (grabbableObject == null)

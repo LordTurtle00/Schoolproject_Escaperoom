@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float Speed = 10f;
+    [SerializeField] public float Speed = 10f;
     [SerializeField] private float Gravity = -9.81f;
     private CharacterController characterController;
     public bool canMove = true;
