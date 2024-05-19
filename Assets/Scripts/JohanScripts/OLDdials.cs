@@ -16,7 +16,7 @@ public class Dials : MonoBehaviour
     //When the game starts it randomizes the rotation value of the dials of the lock
     void Start()
     {
-        DialIndex = Random.Range(0, 10);
+        DialIndex = Random.Range(0, 4);
         transform.Rotate(new Vector3(0, DialIndex * 90, 0));
 
     }
@@ -31,7 +31,7 @@ public class Dials : MonoBehaviour
     public void CheckRotation()
     {
         Vector3 dialRot = Dial.transform.rotation.eulerAngles;
-        if ((int)Correctrotation.x == (int)dialRot.x)
+        if (Mathf.Round((int)Correctrotation.x) == Mathf.Round((int)dialRot.x)
         {
             Check = true;
         }

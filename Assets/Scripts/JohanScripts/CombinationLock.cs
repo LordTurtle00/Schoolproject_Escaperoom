@@ -16,7 +16,7 @@ public class CombinationLock : MonoBehaviour
     public GameObject lidClosed;
 
 
-    // Start is called before the first frame update
+    // Sets up the lid animation and starts a timed check every second
     void Start()
     {
 
@@ -46,8 +46,9 @@ public class CombinationLock : MonoBehaviour
                 Answer = true;
             }
         }
-        //Debug.Log(RightAnswers);
+        
     }
+    //Checks so that all the dils on the lock are in the correct possision
     IEnumerator Check()
     {
         while (IE == true)
